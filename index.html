@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="GawdServer : A new style of Minecraft server modding.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>GawdServer</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/GawdServer">View on GitHub</a>
+
+          <h1 id="project_title">GawdServer</h1>
+          <h2 id="project_tagline">A new style of Minecraft server modding.</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a id="what-is-the-gawdserver" class="anchor" href="#what-is-the-gawdserver" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is the GawdServer?</h3>
+
+<p>The GawdServer is a new modding API for Minecraft servers.
+What makes the GawdServer different is that it is a launcher instead of a wrapper.
+This allows you to control the server without ever modifying the servers code.</p>
+
+<h3>
+<a id="how-does-it-work" class="anchor" href="#how-does-it-work" aria-hidden="true"><span class="octicon octicon-link"></span></a>How does it work?</h3>
+
+<p>Unlike Bukkit, which wrappes the Minecraft server and creates hooks and events in the code;
+The GawdServer will instead listen to the server and send the server commands as necessary.</p>
+
+<p>For example, player Steve types into chat <strong><em>!home</em></strong></p>
+
+<blockquote>
+<p>The server will look for the home handle. If you have the home plugin, the home plugin will lookup the players home coordinates and respond to the server <code>tp Steve 123 45 678</code></p>
+</blockquote>
+
+<h3>
+<a id="setting-up-a-server" class="anchor" href="#setting-up-a-server" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setting up a Server</h3>
+
+<p>Starting a GawdServer is aimed to be as simple as Bukkit.</p>
+
+<ol>
+<li>Download the latest GawdServer build from <a href="https://github.com/GawdServer/GawdServer/releases/latest">here</a>.</li>
+<li>Download a Minecraft server. This can be Vanilla, Snapshot, etc...</li>
+<li>Modify the GawdServer.conf to configure how your server is launched.</li>
+<li>Drag any plugin <strong><em>.Jar</em></strong> files to the <strong><em>plugins</em></strong> folder.</li>
+<li>Open Command Prompt or Shell run the following command:</li>
+</ol>
+
+<pre><code>java -jar GawdServer.jar
+</code></pre>
+
+<h3>
+<a id="plugins" class="anchor" href="#plugins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Plugins</h3>
+
+<p>To provide some basic functionality and to help demonstrate the API, I have created some basic plugins.
+Downloads for these plugins can be found here.
+If you would like to have your plugin listed, please submit it here.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
